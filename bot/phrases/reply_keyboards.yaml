@@ -1,0 +1,10 @@
+menu:
+  get accent: Узнать ударение в слове
+  get definition: Узнать значение слова
+  get correct: Правильное слово
+
+verification:
+  ok: Да
+  not ok: Нет
+
+come back: Назад
