@@ -12,6 +12,8 @@ def get_word_definition(word):
         response = session.get(url, headers=headers)
         if response.status_code == 404:
             return f'Слово «{word}» отсутствует в словаре'
+        if response.status_code == 403:
+            return f'Эта функция пока не работает'
         print(response.status_code)
     site_text = response.text
     parsed_site = html.fromstring(site_text)
