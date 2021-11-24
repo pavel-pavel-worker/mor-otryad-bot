@@ -43,5 +43,5 @@ if __name__ == '__main__':
 
     app = get_new_configured_app(dispatcher=dp, path=WEBHOOK_URL_PATH)
     app.on_startup.append(on_startup)
-    app.on_shutdown(shutdown)
+    app.on_shutdown.append(shutdown)
     web.run_app(app, host='0.0.0.0', port=os.getenv('PORT'))
